@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 700px;
+    height: 500px;
+    margin: 100px;
+    padding: 100px;
+    
+}
+
+div {
+    font-family: sans-serif;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: fallDown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} 
+
+img {
+    width: 60px;
+    height: 40px;
+    transform: translateY(-200px) translateX(-600px) rotate (-10deg);
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.bg-image {
+    width: 700px;
+    height: 500px;
+    background-image: url("christmas-pic.jpg");
+    background-size: 700px 500px;
+    background-repeat: no-repeat;
+}
+
+.a {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    animation-delay: -1s;
+}
+
+.b {
+    background-color: white;
+    animation-delay: 0.5s;
+}
+
+.c {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    animation-delay: 1.5s;
+}
+
+.d {
+    background-color: white;
+    animation-delay: -2.5s;
+}
+
+.e {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    animation-delay: 1s;
+}
+
+.f {
+    background-color: white;
+    animation-delay: -0.5s;
+}
+
+.g {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    animation-delay: -1.5s;
+}
+
+.h {
+    background-color: white;
+    animation-delay: -2s;
+}
+
+
+
+.g1 {
+    color: red;
+    animation-name: progress20;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-100px) translateX(-350px) rotate(10deg);
+}
+
+.g2 {
+    color: red;
+    animation-name: progress40;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-150px) translateX(-240px) rotate(-10deg);
+}
+
+.g3 {
+    color: red;
+    animation-name: progress60;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-170px) translateX(-120px) rotate(10deg);
+}
+
+.g4 {
+    color: red;
+    animation-name: progress80;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-100px) translateX(-15px) rotate(-10deg);
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(-500px) translateX(150px);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(-250px) translateX(100px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(150px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-180px) translateX(-620px) rotate(-10deg);
+    }
+
+    20% {
+        transform: translateY(-200px) translateX(-500px) rotate(30deg);
+    }
+
+    30% {
+        transform: translateY(-170px) translateX(-400px) rotate(-20deg);
+    }
+
+    45% {
+        transform: translateY(-190px) translateX(-300px) rotate(15deg);
+    }
+
+    70% {
+        transform: translateY(-180px) translateX(-200px) rotate(-20deg);
+    }
+
+    85% {
+        transform: translateY(-250px) translateX(-100px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(-230px) translateX(15px) rotate(20deg);
+    }
+}
+
+@keyframes progress20 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}    
+
+@keyframes progress40 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}  
+
+@keyframes progress60 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}  
+
+@keyframes progress80 {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

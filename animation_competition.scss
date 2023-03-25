@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-image: url("christmas-pic.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+}
+
+div {  
+    
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: fallDown;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+} 
+
+
+.a {
+    width: 15px;
+    height: 15px;
+}
+
+.c {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+@for $i from 1 through 10 {
+    .a .b .c .d {
+    animation-delay: 2s;
+}
+}
+
+
+
+
+
+@keyframes fallDown {
+    0% {
+        
+        transform: translateY(-300%);
+    }
+
+    100% {
+        
+        transform: translateY(3000%);
+    }
+}
+
